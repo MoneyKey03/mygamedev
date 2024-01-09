@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.widthBaseClass, .footer__container, .app, .courses__container, .comment, .header__container {
+  width: 1134px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+  width: 100%;
+  height: 100vh;
+}
+.header__container {
+  position: relative;
+  z-index: 10;
+}
+.header__container .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0px;
+}
+.header__container .header__nav .logo {
+  font-weight: 900;
+  font-size: 40px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.header__container .header__nav .header__menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 16px 0px;
+}
+.header__container .header__nav .header__menu li a {
+  color: white;
+  font-weight: bold;
+}
+.header__container .header__nav .header__menu li a:nth-child(4) {
+  background: #023047;
+  border-radius: 24px;
+  padding: 16px 32px;
+}
+.header__container .header__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  padding-top: 60px;
+  width: 1134px;
+}
+.header__container .header__about .about__left {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.header__container .header__about .about__left h1 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 125%;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+.header__container .header__about .about__left p {
+  color: white;
+  font-weight: 400;
+  line-height: 200%;
+  font-size: 16px;
+  margin: 18px 0px 30px;
+  font-family: "Poppins", sans-serif;
+}
+.header__container .header__about .about__left button {
+  background-color: #DA722C;
+  border: none;
+  border-radius: 24px;
+  padding: 16px 32px 16px 60px;
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+.header__container .header__about .about__left button::before {
+  content: url(./images/enrol-now-icon.svg);
+  position: absolute;
+  top: 15px;
+  left: 32px;
+}
+.header__container .header__about .about__right {
+  width: 47%;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+.header__container .header__about .about__right img {
+  height: 490px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+.header__container .header__about .about__rating .students-enrolled {
+  position: absolute;
+  left: 47%;
+  top: 290px;
+}
+.header__container .header__about .about__rating .students-enrolled .content {
+  border-radius: 24px;
+  background-color: white;
+  padding: 8px 32px;
+  position: relative;
+  z-index: 10;
+}
+.header__container .header__about .about__rating .students-enrolled .content h3 {
+  width: 100%;
+  color: #023047;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.header__container .header__about .about__rating .students-enrolled .content p {
+  font-weight: 400;
+  color: #023047;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.header__container .header__about .about__rating .students-enrolled .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+  border-radius: 24px;
+}
+.header__container .header__about .about__rating .over-rating {
+  position: absolute;
+  left: 45%;
+  top: 510px;
+  min-width: 200px;
+}
+.header__container .header__about .about__rating .over-rating .content {
+  border-radius: 24px;
+  background-color: white;
+  padding: 8px 32px;
+  position: relative;
+  z-index: 10;
+}
+.header__container .header__about .about__rating .over-rating .content h3 {
+  width: 100%;
+  color: #023047;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 14px;
+}
+.header__container .header__about .about__rating .over-rating .content p {
+  font-weight: 400;
+  color: #023047;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.header__container .header__about .about__rating .over-rating .content::before {
+  content: url(./images/star-icon.svg);
+  position: absolute;
+  z-index: 12;
+  top: 13px;
+  right: 32px;
+}
+.header__container .header__about .about__rating .over-rating .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+  border-radius: 24px;
+}
+
+.comment__container {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.comment__container .comment__left .card {
+  box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 24px;
+  width: 442px;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+}
+.comment__container .comment__left .card .content {
+  background-color: #6F7DFB;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 24px 32px;
+  border-radius: 24px;
+  line-height: 150%;
+}
+.comment__container .comment__left .card .info {
+  padding: 24px 32px;
+  position: relative;
+  z-index: 3;
+}
+.comment__container .comment__left .card .info h4 {
+  font-size: 24px;
+  line-height: 120%;
+}
+.comment__container .comment__left .card .info p {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+.comment__container .comment__left .card .info img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: 2;
+  right: 32px;
+  bottom: 24px;
+}
+.comment__container .comment__left .card:first-child::before {
+  content: "";
+  width: 28px;
+  height: 546px;
+  background: #023047;
+  border-radius: 24px;
+  position: absolute;
+  z-index: -1;
+  top: -35px;
+  left: 87px;
+}
+.comment__container .comment__left .card:last-child {
+  transform: translateX(20px);
+}
+.comment__container .comment__left .card:last-child .content {
+  background-color: #DA722C;
+}
+.comment__container .comment__right h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  color: #023047;
+  font-weight: 900;
+  line-height: 120%;
+}
+.comment__container .comment__right .content {
+  margin: 16px 0px 30px 0px;
+}
+.comment__container .comment__right .content p {
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0px;
+  font-weight: 400;
+}
+.comment__container .comment__right button {
+  background-color: #DA722C;
+  color: white;
+  padding: 16px 32px;
+  font-weight: bold;
+  border-radius: 24px;
+  border: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.courses {
+  background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+  padding: 70px 0 140px 0;
+  margin-top: 100px;
+}
+.courses__container {
+  position: relative;
+}
+.courses__container .courses__title h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+  color: white;
+}
+.courses__container .courses__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 56px 0;
+  position: relative;
+}
+.courses__container .courses__card .card {
+  width: 500px;
+  background-color: white;
+  border-radius: 24px;
+  position: relative;
+  padding: 0px 32px;
+}
+.courses__container .courses__card .card img {
+  width: 100%;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 24px;
+}
+.courses__container .courses__card .card .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  margin: 30px 0px;
+  gap: 16px;
+  height: 90px;
+  color: #023047;
+}
+.courses__container .courses__card .card .info h3 {
+  font-size: 30px;
+  align-self: flex-start;
+  line-height: 150%;
+}
+.courses__container .courses__card .card .info .duration {
+  padding-left: 20px;
+  font-weight: 900;
+  position: relative;
+}
+.courses__container .courses__card .card .info .duration::before {
+  content: url(./images/clock.svg);
+  position: absolute;
+  top: 0;
+  left: -6px;
+}
+.courses__container .courses__card .card::after {
+  content: "";
+  height: 8px;
+  background: #023047;
+  border-radius: 24px;
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 0;
+}
+.courses__container .courses__all button {
+  background-color: #DA722C;
+  padding: 16px 32px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  right: 0;
+  border-radius: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.app__container {
+  text-align: center;
+  margin: 30px 0px 100px;
+  color: #023047;
+}
+.app__container h2 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  line-height: 120%;
+}
+.app__container p {
+  margin: 10px 0px;
+}
+.app__container .button {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.app__container .button .icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 31px;
+  gap: 14px;
+  min-width: 310px;
+  background-color: black;
+  color: white;
+}
+.app__container .button .icon p {
+  font-size: 20px;
+}
+
+.footer {
+  background: #070917;
+  padding: 70px 0;
+}
+.footer__container .contact__container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 4fr;
+  gap: 122px;
+}
+.footer__container .contact__container .contact h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  color: #DA722C;
+}
+.footer__container .contact__container .contact ul {
+  margin: 16px 0px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer__container .contact__container .contact ul li a {
+  color: white;
+}
+.footer__container .contact__container .contact .email {
+  color: white;
+  margin: 16px 0px;
+  padding-left: 20px;
+}
+.footer__container .contact__container .contact .email a {
+  color: white;
+}
+.footer__container .contact__container .contact .social {
+  display: flex;
+  justify-content: flex-start;
+  margin: 16px 0px 26px 20px;
+  gap: 28px;
+}
+.footer__container .contact__container .contact form {
+  position: relative;
+  margin-left: 20px;
+}
+.footer__container .contact__container .contact form input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 4px 140px 4px 32px;
+}
+.footer__container .contact__container .contact form button {
+  padding: 8px 28px;
+  background: #023047;
+  border-radius: 8px;
+  color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+}
+.footer__container p {
+  margin-top: 36px;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
